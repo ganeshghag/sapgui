@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.12.8 on win32)" generated="2025-04-11T18:17:44.717630" rpa="false" schemaversion="5">
+<suite id="s1" name="Test1" source="C:\Users\ganesh1.ghag\ganeshghagdev\sapgui\test1.robot">
+<test id="s1-t1" name="MyFirstTestCaseByGG" line="8">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-11T18:17:45.502250" level="INFO">Hello World....</msg>
+<arg>Hello World....</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-11T18:17:45.502250" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-11T18:17:45.502250" level="INFO">Ganesh1.Ghag</msg>
+<arg>%{USERNAME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-11T18:17:45.502250" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-11T18:17:45.502250" level="INFO">https://www.seleniumeasy.com/test/basic-first-form-demo.html</msg>
+<arg>%{URL}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-11T18:17:45.502250" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-11T18:17:45.502250" level="INFO">Chrome</msg>
+<arg>${BROWSER}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-11T18:17:45.502250" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-04-11T18:17:45.502250" elapsed="0.000000"/>
+</test>
+<test id="s1-t2" name="Valid Login" line="14">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-11T18:17:45.502250" level="INFO">Opening browser 'Chrome' to base url 'https://www.seleniumeasy.com/test/basic-first-form-demo.html'.</msg>
+<arg>%{URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-11T18:17:45.502250" elapsed="6.395385"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-04-11T18:17:51.898655" elapsed="0.034469"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>0.3 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-04-11T18:17:51.933124" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-11T18:17:51.933124" level="INFO">Clicking element '//b[@class="caret"]'.</msg>
+<msg time="2025-04-11T18:17:52.784815" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-04-11T18:17:52.784815" level="FAIL">Element with locator '//b[@class="caret"]' not found.</msg>
+<arg>//b[@class="caret"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-04-11T18:17:51.933124" elapsed="0.863013">Element with locator '//b[@class="caret"]' not found.</status>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<arg>//a[@href="./basic-first-form-demo.html"]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-11T18:17:52.796137" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>//input[@id="user-message"]</arg>
+<arg>sampel messahe</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-11T18:17:52.796137" elapsed="0.001002"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>//button[@class="btn btn-default"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-11T18:17:52.797139" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>//input[@id="sum1"]</arg>
+<arg>983</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-11T18:17:52.797139" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>//input[@id="sum2"]</arg>
+<arg>Ganesh Ghag</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-11T18:17:52.797139" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=(//button[@class="btn btn-default"])[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-11T18:17:52.797139" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=(//div[@class="row"])[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-11T18:17:52.798136" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>//input[@id="sum2"]</arg>
+<arg>14</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-11T18:17:52.798136" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=(//button[@class="btn btn-default"])[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-11T18:17:52.798136" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2025-04-11T18:17:52.798136" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-04-11T18:17:45.502250" elapsed="7.295886">Element with locator '//b[@class="caret"]' not found.</status>
+</test>
+<status status="FAIL" start="2025-04-11T18:17:44.735806" elapsed="8.063564"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test1" id="s1" pass="1" fail="1" skip="0">Test1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
